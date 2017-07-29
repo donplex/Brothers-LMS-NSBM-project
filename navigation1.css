@@ -1,0 +1,63 @@
+body{
+    font: 15px arial, sans-serif;
+}
+
+ul.multidrop *{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul.multidrop{
+    padding: 0;
+    margin: 0;
+    background: blue;
+    float:left;
+}
+
+ul.multidrop ul{
+    padding: 0;
+    margin: 0;
+    background:blue;
+    float:left;
+}
+
+ul.multidrop li{
+    padding: 5px;
+    float:left;
+    display: inline;
+    position: relative;
+    width: 150px;
+    list-style: none;
+    cursor: pointer;
+}
+
+ul.multidrop li:hover{
+    background: green;
+}
+
+ul.multidrop ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: green;
+    display: none;
+}
+
+ul.multidrop ul ul{
+    left: 100%;
+    top: 0;
+    background:blue;
+}
+
+ul.multidrop li:hover > ul{
+    display: block;
+    background: green;
+    
+}
+
+ul.multidrop li ul li:hover{
+    background: blue;
+}
+
+
+
